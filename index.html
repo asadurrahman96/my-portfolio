@@ -14,54 +14,50 @@
 </head>
 <body class="bg-gray-50 min-h-screen">
     
-    <section class="animated-bg h-screen w-full flex flex-col items-center justify-center text-center px-4">
-        <div class="max-w-3xl space-y-6">
-            <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight drop-shadow-xl">
-                Hello I am  <span class="underline decoration-white/30">Asadur Rahman</span>
-            </h1>
-            <p class="text-white/80 text-lg md:text-xl font-medium">
-                I build digital experiences that are functional and beautiful.
-            </p>
-            <div class="pt-4">
-                <a href="#navbar-start" class="btn nav-gradient border-none text-white border-none hover:scale-105 transition-transform shadow-2xl px-10">
-                    Explore My Work
-                </a>
-            </div>
+    <section id="home" class="animated-bg h-screen w-full flex flex-col items-center justify-center text-center px-4">
+    <div class="max-w-3xl space-y-6">
+        <h1 class="text-5xl md:text-7xl font-black text-white tracking-tight drop-shadow-xl">
+            Hello I am <span class="underline decoration-white/30">Asadur Rahman</span>
+        </h1>
+        <p class="text-white/80 text-lg md:text-xl font-medium">
+            I build digital experiences that are functional and beautiful.
+        </p>
+        <div class="pt-4">
+            <a href="#projects" class="btn nav-gradient border-none text-white hover:scale-105 transition-transform shadow-2xl px-10">
+                Projects
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-
-
-
-    <nav class="navbar sticky top-0 z-50 backdrop-blur-md bg-white/70 px-4 md:px-12 border-b border-gray-200 text-black">
-        <div class="navbar-start">
-            <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg">
-                    <li><a>Home</a></li>
-                    <li><a>Projects</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
+<nav class="navbar sticky top-0 z-50 backdrop-blur-md bg-white/70 px-4 md:px-12 border-b border-gray-200 text-black">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
-           
-        </div>
-
-        <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 gap-4 font-medium">
-                <li><a>Home</a></li>
-                <li><a>Projects</a></li>
-                <li><a>About</a></li>
-                <li><a>Contact</a></li>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
+    </div>
 
-        <div class="navbar-end">
-            <a class="btn nav-gradient border-none text-white hover:scale-105  transition-transform shadow-2xl px-10">Hire Me</a>
-        </div>
-    </nav>
+    <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 gap-4 font-medium">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="navbar-end">
+        <a href="#contact" class="btn nav-gradient border-none text-white hover:scale-105 transition-transform shadow-2xl px-10">Hire Me</a>
+    </div>
+</nav>
     
 
  <section id="about" class="py-24 px-6 md:px-20 dark-theme">
@@ -84,6 +80,9 @@
                         class="relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-700"
                     />
                 </div>
+              <div class="mt-5">
+                  <button class="btn nav-gradient border-none text-white hover:scale-105  transition-transform shadow-2xl px-10">Resume</button>
+              </div>
             </div>
 
             <div class="w-full md:w-3/5 space-y-8">
@@ -98,18 +97,18 @@
                 <div class="pt-8">
                     <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-6">Tech Stack</h4>
                     <div class="flex flex-wrap gap-3">
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-html5-plain"></i> <span>HTML</span>
                         </div>
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-html5-plain"></i> <span>CSS</span>
                         </div>
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-tailwindcss-plain"></i> <span>TAILWIND</span>
                         </div>
                         
                         
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-javascript-plain"></i> <span>JAVASCRIPT</span>
                         </div>
                         <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
@@ -119,13 +118,13 @@
                             <i class="devicon-react-original"></i> <span>Next JS (In Progres)</span>
                         </div>
 
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-mongodb-plain"></i> <span>MONGODB</span>
                         </div>
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-cplusplus-plain"></i> <span>C++ / DSA</span>
                         </div>
-                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
                             <i class="devicon-git-plain"></i> <span>GIT</span>
                         </div>
                     </div>
@@ -135,6 +134,65 @@
     </div>
 </section>
 
+
+
+<section id="projects" class="py-24 px-6 md:px-20 dark-theme">
+    <div class="max-w-6xl mx-auto">
+        
+        <div class="mb-16">
+            <div class="w-12 h-1 bg-black mb-4"></div>
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter">
+                FEATURED<br><span class="opacity-20">PROJECTS</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="group relative overflow-hidden rounded-2xl bg-slate-100 aspect-video md:aspect-square lg:aspect-video">
+                <img 
+                    src="./assets/Quiz App.JPG" 
+                    alt="Project One" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:rotate-1"
+                />
+                
+                <div class="absolute inset-0 bg-black/80 flex flex-col justify-center items-center p-8 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-sm">
+                    <h3 class="text-white text-3xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Instant Online Quiz App</h3>
+                    <p class="text-slate-400 text-center mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                        A full-stack MERN platform with real-time notifications.
+                    </p>
+                    <div class="flex gap-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
+                        <a href="https://tsquize.vercel.app/index.html" target="_blank" class="btn btn-sm btn-outline text-white hover:bg-white hover:text-black">Live Site</a>
+                     
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-2xl bg-slate-100 aspect-video md:aspect-square lg:aspect-video">
+                <img 
+                    src="./assets/Swift cart nav and banner.JPG" 
+                    alt="Project Two" 
+                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 group-hover:-rotate-1"
+                />
+                
+                <div class="absolute inset-0 bg-black/80 flex flex-col justify-center items-center p-8 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-sm">
+                    <h3 class="text-white text-3xl font-bold mb-2 translate-y-4 group-hover:translate-y-0 transition-transform duration-500">Swif-Cart E-Commerce</h3>
+                    <p class="text-slate-400 text-center mb-6 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                      
+                    </p>
+                    <div class="flex gap-4 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-150">
+                        <a href="https://swift-cart-shopping.netlify.app/" target="_blank" class="btn btn-sm btn-outline text-white hover:bg-white hover:text-black">Live Site</a>
+                       
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-12 p-12 border-2 border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center text-slate-400">
+            <p class="font-bold tracking-widest uppercase text-xs">More coming soon</p>
+        </div>
+    </div>
+</section>
 
 
 
