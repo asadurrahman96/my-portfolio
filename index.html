@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asadur Rahman Portfolio</title>
+    <title>Asadur Rahman Portfolio|Web-Dev</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
     <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -44,7 +46,7 @@
                     <li><a>Contact</a></li>
                 </ul>
             </div>
-            <a class="text-2xl font-bold bg-clip-text text-transparent nav-gradient">PORTFOLIO.</a>
+           
         </div>
 
         <div class="navbar-center hidden lg:flex">
@@ -57,10 +59,84 @@
         </div>
 
         <div class="navbar-end">
-            <a class="btn nav-gradient border-none text-white hover:opacity-90 transition-all">Hire Me</a>
+            <a class="btn nav-gradient border-none text-white hover:scale-105  transition-transform shadow-2xl px-10">Hire Me</a>
         </div>
     </nav>
     
+
+ <section id="about" class="py-24 px-6 md:px-20 dark-theme">
+    <div class="max-w-5xl mx-auto">
+        
+        <div class="mb-16">
+            <h2 class="text-5xl md:text-7xl font-black tracking-tighter mb-6">
+                ABOUT <span class="opacity-20">ME</span>
+            </h2>
+            <div class="w-24 h-1 bg-accent"></div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="w-full md:w-2/5">
+                <div class="relative group">
+                    <div class="absolute inset-0 border-2 border-accent translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
+                    <img 
+                        src="./assets/Asadur Graduation selfie.jpg" 
+                        alt="Profile" 
+                        class="relative z-10 w-full grayscale hover:grayscale-0 transition-all duration-700"
+                    />
+                </div>
+            </div>
+
+            <div class="w-full md:w-3/5 space-y-8">
+                <p class="text-xl md:text-2xl leading-relaxed text-gray-300">
+                    Fully committed to the philosophy of <span class="text-white font-bold">life-long learning</span>, I'm a junior developer with a deep passion for <span class="text-accent">JavaScript, React</span> and all things web development.
+                </p>
+                
+                <p class="text-gray-400">
+                    Currently, I am focusing on mastering <span class="text-white">Data Structures and Algorithms (DSA)</span> while building full-stack applications with MongoDB and Tailwind CSS.
+                </p>
+
+                <div class="pt-8">
+                    <h4 class="text-sm uppercase tracking-widest text-gray-500 mb-6">Tech Stack</h4>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-html5-plain"></i> <span>HTML</span>
+                        </div>
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-html5-plain"></i> <span>CSS</span>
+                        </div>
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-tailwindcss-plain"></i> <span>TAILWIND</span>
+                        </div>
+                        
+                        
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-javascript-plain"></i> <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
+                            <i class="devicon-react-original"></i> <span>REACT</span>
+                        </div>
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded text-accent">
+                            <i class="devicon-react-original"></i> <span>Next JS (In Progres)</span>
+                        </div>
+
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-mongodb-plain"></i> <span>MONGODB</span>
+                        </div>
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-cplusplus-plain"></i> <span>C++ / DSA</span>
+                        </div>
+                        <div class="skill-tag px-4 py-2 flex items-center gap-2 rounded">
+                            <i class="devicon-git-plain"></i> <span>GIT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
     <script src="./js/script.js"></script>
 </body>

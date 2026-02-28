@@ -1,27 +1,63 @@
-body { font-family: 'Inter', sans-serif; }
+body {
+  font-family: "Inter", sans-serif;
+}
 
-        .animated-bg {
-            background: linear-gradient(-45deg, #6366f1, #a855f7, #ec4899, #22d3ee);
-            background-size: 400% 400%;
-            animation: gradientMove 15s ease infinite;
-        }
-        
-        .nav-gradient {
-            background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
-        }
-        
-        .nav-item-active {
-            position: relative;
-            color: #a855f7;
-        }
-        
-        .nav-item-active::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: currentColor;
-            border-radius: 2px;
-        }
+.animated-bg {
+  background: linear-gradient(-45deg, #6366f1, #a855f7, #ec4899, #22d3ee);
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
+}
+
+.nav-gradient {
+  background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+}
+
+.nav-item-active {
+  position: relative;
+  color: #a855f7;
+}
+
+.nav-item-active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  border-radius: 2px;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+
+.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.text-accent {
+    color: #00d8ff; /* A subtle React-blue accent like Ben uses */
+}
+
+.skill-tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    border-color: #00d8ff;
+}
