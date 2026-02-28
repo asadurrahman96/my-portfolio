@@ -1,0 +1,27 @@
+body { font-family: 'Inter', sans-serif; }
+
+        .animated-bg {
+            background: linear-gradient(-45deg, #6366f1, #a855f7, #ec4899, #22d3ee);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+        }
+        
+        .nav-gradient {
+            background: linear-gradient(90deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+        }
+        
+        .nav-item-active {
+            position: relative;
+            color: #a855f7;
+        }
+        
+        .nav-item-active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: currentColor;
+            border-radius: 2px;
+        }
