@@ -31,3 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+const resumeBtn = document.querySelector('a[href$=".pdf"]');
+
+if (resumeBtn) {
+    resumeBtn.addEventListener('click', (e) => {
+        console.log("Resume is being viewed!");
+        // You could add an alert or analytics here
+    });
+}
